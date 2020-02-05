@@ -102,25 +102,32 @@ header{
 }
 /* Here is the footer components and their styles */
 .justify-c{
-    width: 275px;
+    padding: 25px 0;
+    width: 250px;
     font-size: .8em;
 }
 .footer-row{
-    height: 100px;
+    height: 90px;
     background: #18ACC4;
+    font-size: .7em;
 }
 #footer-row-1{
     background: #007A8D;
 }
 #info-footer{
     border: 3px solid #fff;
-    width: 50px;
-    height: 50px;
-    padding: 15px 15px;
-    margin: 40px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    padding: 8px 8px;
     border-radius: 50%;
     justify-content: center; 
     align-items: center;
+}
+footer p{
+ font-size: 0.9em;
+ width: 100%;
+ margin-left: -1px;
 }
 /* Here are the typograph components and their styles */
 
