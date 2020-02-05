@@ -13,7 +13,7 @@
 .align-end{
     text-align: end;
 }
-.align-v-center{
+.align-v-center-row{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,12 +21,14 @@
     justify-content: center;
 
 }
-/* .button-sm{
+.align-v-center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
 }
-.button-md{
-
-} */
 .button-lg{
     width: 255px;
     height: 30px;
@@ -51,12 +53,25 @@
 .disabled{
     color: #6a6a6a;
 }
+.b-outline-circle{
+    border: 3px solid #18ACC4;
+    width: 70px;
+    height: 70px;
+    padding: 15px 15px;
+    margin: 40px 0;
+    border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+}
 .set-color-text{
     color: #007A8D;
-
 }
 .white-text{
     color: #fff;
+}
+.black-text{
+    color: #000;
+    font-weight: 500;
 }
 .ml-1{
     margin-left: 5px;
@@ -81,4 +96,11 @@
 }
 .mr-4{
     margin-right: 20px;
+}
+.card-container{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 0 10px;
 }
