@@ -5,22 +5,35 @@
 }
 .align-center{
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .align-start{
     text-align: start;
-    align-items: center;
-    justify-content: center;
+   
 }
 .align-end{
     text-align: end;
-    align-items: center;
-    justify-content: center;
 }
-.list{
-    list-style: none;
+.ml-1{
+    margin-left: 5px;
 }
-.list ul li {
-    display: inline;
+.ml-2{
+    margin-left: 10px;
+}
+.ml-3{
+    margin-left: 15px;
+}
+.ml-4{
+    margin-left: 20px;
+}
+.mr-1{
+    margin-right: 5px;
+}
+.mr-2{
+    margin-right: 10px;
+}
+.mr-3{
+    margin-right: 15px;
+}
+.mr-4{
+    margin-right: 20px;
 }

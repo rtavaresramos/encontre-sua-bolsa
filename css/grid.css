@@ -40,8 +40,8 @@
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
     margin-right: -4px;
     *zoom: 1;
@@ -60,7 +60,18 @@
             width: 33.3333%;
         }
     }
-
+    
+    /* quatro colunas */
+    @media (min-width: 960px) {
+        .col-4 {
+            width: 25%;
+        }
+        .col-m-sm{
+            margin-right: -20px;
+            margin-left: 5px;
+        }
+    }
+    
     /* sidebar */
     @media (min-width: 992px) {
         .col-content {
