@@ -1,0 +1,26 @@
+
+
+.link{
+    text-decoration: none;
+}
+.align-center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.align-start{
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+.align-end{
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    list-style: none;
+}
+.list ul li {
+    display: inline;
+}

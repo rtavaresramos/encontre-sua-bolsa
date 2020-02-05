@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #FBFBFB;
+}
+nav{
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    background: #fff;
+    
+}
+header{
+    text-align: center;
+}
+
+.nav-item{
+    margin: 5px 0px;
+}
+#nav-content-1{
+    margin-right: 10px;
+    border-right: 4px solid rgba(235, 235, 235, .6);
+    
+}
+#nav-content-2{
+    display: flex;
+    width: 120%;
+    align-items: center;
+}
+#nav-brand{
+    width: 20%;
+    text-align: center;
+}
+#first-section{
+    background: #18ACC4;
+    /* padding: 10px 0; */
+}
+#first-section h2{ 
+    font-weight: 100;   
+    margin: 7px 0;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; 
+    font-size: 1.1em;
+}
+h3,h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #18ACC4;
+    margin: 0 3px;
+}
+h3{
+    font-size: 1em;
+}
+h4{
+    font-size: .7em;
+    margin: 5px 0;
+}
+.align-v-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    align-items: center;
+}
+#main img{
+    width: auto;
+    height: 50px;
+}
+
+.nav-icon{
+    color: #18ACC4;
+}
+.info{
+    border: 3px solid #18ACC4;
+    width: 30px;
+    height: 30px;
+    padding: 4px 9px;
+    margin: 4px 0;
+    border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+}
