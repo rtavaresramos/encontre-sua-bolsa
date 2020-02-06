@@ -14,6 +14,11 @@
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" 
     crossorigin="anonymous">
     <title>Quero Bolsa</title>
+    <script>
+        function changingPrice(){
+            document.getElementById("#get-price").innerHTML = document.getElementById("#choose-price").value;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -212,7 +217,7 @@
                   </div>
                   <div class="modal-body" >
                           <div class="container">
-                              <form action="" method="POST" >
+                              <form action="" method="POST">
                                   <div class="col">
                                       <div class="row">
                                           <div class="col col-2" >
@@ -237,9 +242,10 @@
                                           </div>
                                           <div class="col col-2" >
                                               <h4 class="black-text set-upper">Até quanto pode pagar?</h4>
-                                              <p class="black-text">Valor</p>
-                                              <input id="choose-price"type="range" min="100" max="10000" value="100">
-                                          </div>
+                                              <p class="black-text">R$</p>
+                                              <input id="choose-price"type="range" min="100" max="10000" value="10000" onchange="changingPrice()">
+                                              <span id="get-price" class="black-text"></span>
+                                            </div>
                                       </div>
                                   </div>
                               </form>
@@ -287,7 +293,8 @@
         Modal
     </div> -->
 
-    <script src="modal.js"></script>
+    <script src="./javascript/modal.js"></script>
+    <script src="./javascript/script.js"></script>
     <footer>
         <div id="footer-row-1"class="col align-center">
             <div class="col col-4 justify-c" >
