@@ -10,6 +10,11 @@ body{
     background: #FBFBFB;
 }
 
+button{
+    background-color: #fff;
+    border: none;
+    
+}
 /* Here you can find out the Navegation's Bar Style */
 
 nav{
@@ -161,4 +166,33 @@ h5{
 p{
     color: #6a6a6a;
     margin: 0 50px;
+}
+
+/*  Modal components styles */
+
+#my-modal h1{
+    margin: 0 ;
+    font-size: 1.8em; 
+   
+}
+#my-modal p{
+    font-weight: 300;
+    font-size: .8em;
+    margin: -5px 0;
+}
+
+#my-modal select{
+    appearance: none;
+    background: #fff;
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 400;
+    /* -webkit-appearance: button; */
+}
+
+#choose-price{
+    margin: 15px 0;
+    width: 95%;
+    color: #18ACC4;
 }

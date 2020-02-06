@@ -70,7 +70,7 @@
     color: #fff;
 }
 .black-text{
-    color: #000;
+    color: #1F2D30;
     font-weight: 500;
 }
 .ml-1{
@@ -103,4 +103,10 @@
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
     margin: 0 10px;
+}
+
+.set-upper{
+    text-transform: uppercase;
+}.set-lower{
+    text-transform: lowercase;
 }

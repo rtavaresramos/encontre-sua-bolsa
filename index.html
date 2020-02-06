@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/utils.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" 
@@ -128,7 +130,7 @@
             <div class="row">
                 <div class="col" >
                 <div class="col col-2">
-                    <h1>Bolsas favoritas</h1>
+                    <h1 class="black-text">Bolsas favoritas</h1>
                 </div>
                 <div class="col"> <p>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</p></div>
                 </div>
@@ -164,12 +166,13 @@
                 <div class="col" >
                     <div class="row">
                         <div class="container card-container align-v-center-col">
-
-                            <div class="align-center">
-                                <a href="">
-                                    <i class="fas fa-plus b-outline-circle sec-icon"></i>
-                                </a>
-                            </div>
+                            <!-- <button > -->
+                                <div class="align-center">
+                                    <a id="modal-btn" href="#modal-btn">
+                                        <i class="fas fa-plus b-outline-circle sec-icon"></i>
+                                    </a>
+                                </div>
+                            <!-- </button> -->
                             <div class="align-center">
                                 <h2 class="black-text">Adicionar bolsa</h2>
                                 <p style="font-size: .8em;width: 200px;">Clique para adicionar bolsas de cursos do seu interesse</p>
@@ -184,8 +187,107 @@
        
     </section>
 
+    <section>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+      
+              <div class="container">
+                  <div class="col">
+                      <span class="close"><i class="fas fa-times"></i></span>
+                  </div>
+              </div>
+               
+              <div id="modal-content" class="container">
+                  <div class="modal-header">
+                      <!--Primeira linha -->
+                    <div class="container">
+                        <div class="col">
+                            <div class="row">
+                                <h1 class="black-text">Adicionar bolsa</h1>
+                                <p class="black-text">Filtre e adicione as bolsas de seu interesse.</p>
+                            </div>
+                        </div>
+          
+                      </div>
+                  </div>
+                  <div class="modal-body" >
+                          <div class="container">
+                              <form action="" method="POST" >
+                                  <div class="col">
+                                      <div class="row">
+                                          <div class="col col-2" >
+                                              <h4 class="black-text set-upper">Selecione sua cidade</h4>
+                                              <select type="" class="black-text">
+                                                  <option value="">São José dos Campos</option>
+                                              </select>
+                                          </div>
+                                          <div class="col col-2" >
+                                              <h4 class="black-text set-upper">Selecione o curso de sua preferencia</h4>
+                                              <select type="" class="black-text">
+                                                  <option value=""></option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col col-2" >
+                                              <h4 class="black-text set-upper">Selecione sua cidade</h4>
+                                              <input type="checkbox"> Presencial</input>
+                                              <input type="checkbox"> A distancia</input>
+                                              
+                                          </div>
+                                          <div class="col col-2" >
+                                              <h4 class="black-text set-upper">Até quanto pode pagar?</h4>
+                                              <p class="black-text">Valor</p>
+                                              <input id="choose-price"type="range" min="100" max="10000" value="100">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                    </div>
+          
+                      <!-- Segunda linha
+                      
+                    
+                  
+                      Terceira linha
+          
+                      -Como você quer estudar?
+                      -checkbox (Presencial) -checkbox (A distancia)
+          
+                      -Até quanto pode pagar?
+                      -Valor
+                      -Linha controlável que afeta no valor -->
+          
+          
+                  <!-- Primeira linha
+                    
+                  -Resultado
+                  -Ordenar por + Botão com submenu (Nome da Faculdade)
+          
+                      Segunda linha 
+                    
+                  -checkbox
+                  -imagem com logo da Faculdade
+                  -curso com subtitulo (modalidade do curso - bacharelado, lincenciatura, etc.)
+                  -valor do desconto e da mensalidade por mês -->
+                  <div class="modal-footer">
+          
+                    <!-- -botao cancelar
+                    -botao adicionar bolsa(s) -->
+          
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+    </section>
     
+    <!-- <div>
+        Modal
+    </div> -->
 
+    <script src="modal.js"></script>
     <footer>
         <div id="footer-row-1"class="col align-center">
             <div class="col col-4 justify-c" >
