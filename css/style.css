@@ -175,7 +175,7 @@ p{
     font-size: .8em;
     margin: -5px 0;
 }
-#my-modal label{
+#my-modal .input-text{
     font-weight: 300;
     font-size: .9em;
     margin: 0 0;
@@ -191,5 +191,13 @@ p{
 }
 
 #my-modal h3{
-    margin: 0 30px;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.divisor{
+    margin: 20px 30px;
+    height: 3px;
+    background: rgba(235, 235, 235, .6);
+    border: none;
 }

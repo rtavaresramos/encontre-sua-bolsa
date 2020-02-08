@@ -35,3 +35,79 @@
   cursor: pointer;
   margin: -17px 0;
 }
+
+/* Stylizing the select box */
+
+.select-style{
+  position: relative;
+  border: 2px solid rgb(235, 235, 235);
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select-style .arrow-icon {
+  right: 10px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-bottom: 3px solid #6a6a6a;
+  border-right: 3px solid #6a6a6a;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.select-style select{
+  -webkit-appearance: none;
+  appearance: none;
+  color: #007A8D;
+  background: rgba(255,255,255,1);
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 400;
+  border: none;
+}
+.hidden-list{
+  display: none;
+}
+
+/* Stylizing the checkbox */
+
+
+.label-container{
+  display: inline;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.label-container input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid rgb(235, 235, 235);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.check{
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.label-container input:checked {
+  background: #18acc4;
+}

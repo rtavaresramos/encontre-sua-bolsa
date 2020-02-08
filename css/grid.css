@@ -12,7 +12,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
     @media (min-width: 1170px) {
         .container {
@@ -47,21 +47,22 @@
     *zoom: 1;
     *display: inline;
 }
-    /* duas colonas */
+    /* two columns */
     @media (min-width: 480px) {
         .col-2 {
             width: 50%;
         }
     }
 
-    /* tres colunas */
+    /* three columns */
     @media (min-width: 728px) {
         .col-3 {
             width: 33.3333%;
         }
     }
     
-    /* quatro colunas */
+    /* four columns */
+   
     @media (min-width: 960px) {
         .col-4 {
             width: 25%;
@@ -71,7 +72,13 @@
             margin-left: 5px;
         }
     }
-    
+    /* six columns */
+
+    @media (min-width: 960px) {
+        .col-6 {
+            width: 16.66666666667%;
+        }
+    }
     /* sidebar */
     @media (min-width: 992px) {
         .col-content {
