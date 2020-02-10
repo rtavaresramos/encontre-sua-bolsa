@@ -1,7 +1,4 @@
 
-
-
-
 var inputCheck = document.querySelector('input[type=checkbox]')
 var slider = document.getElementById('my-range')
 var output = document.getElementById('value')
