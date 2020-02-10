@@ -1,8 +1,21 @@
 
+/* For div test */
+
+.t-d{
+    border: 1px solid red;
+}
+
+/* Working with Links */
 
 .link{
     text-decoration: none;
 }
+.list{
+    list-style: none;
+}
+
+/* Working about the text or div position */
+
 .align-center{
     text-align: center;
 }
@@ -29,6 +42,9 @@
     justify-content: center;
 
 }
+
+/* Working on button styles */
+
 .button-lg{
     width: 255px;
     height: 30px;
@@ -66,6 +82,9 @@
 .set-color-text{
     color: #007A8D;
 }
+
+/* Working with colors of text */
+
 .white-text{
     color: #fff;
 }
@@ -73,6 +92,28 @@
     color: #1F2D30;
     font-weight: 500;
 }
+.d-blue-text{
+    color: #007A8D;
+}
+.h-blue-text{
+    color: #18ACC4;
+}
+.grey-text{
+    color: #6a6a6a;
+
+}
+
+/* Setting Upper und Lowercase for text */
+
+.set-upper{
+    text-transform: uppercase;
+}.set-lower{
+    text-transform: lowercase;
+}
+
+
+/* Working with margins */
+
 .ml-1{
     padding-left: 5px;
 }
@@ -97,6 +138,46 @@
 .mr-4{
     padding-right: 20px;
 }
+
+.mh-1{
+    margin:0  5px;
+}
+.mh-2{
+    margin:0  10px;
+}
+.mh-3{
+    margin:0  15px;
+}
+.mh-4{
+    margin:0  20px;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+.mt-2{
+    margin-top: 10px;
+}
+.mt-3{
+    margin-top: 15px;
+}
+.mt-4{
+    margin-top: 20px;
+}
+.mt-5{
+    margin-top: 25px;
+}
+.mt-6{
+    margin-top: 30px;
+}
+.mt-7{
+    margin-top: 35px;
+}
+.mt-8{
+    margin-top: 40px;
+}
+/* Making the Card layout it will be showed on the home page */
+
 .card-container{
     width: 250px;
     height: 400px;

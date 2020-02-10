@@ -38,45 +38,48 @@
 
 /* Stylizing the select box */
 
+
 .select-style{
+  top: 1px;
   position: relative;
+  margin: 0 0;
+  bottom: 20px;
   border: 2px solid rgb(235, 235, 235);
   width: 95%;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
-  cursor: pointer;
+  background: rgba(0,0,0,0);
 }
-.select-style .arrow-icon {
+ .select-style .arrow-icon {
+  position: absolute;
   right: 10px;
   top: 12px;
   width: 10px;
   height: 10px;
-  position: absolute;
   border-bottom: 3px solid #6a6a6a;
   border-right: 3px solid #6a6a6a;
-  cursor: pointer;
   transform: rotate(45deg);
-}
+
+} 
 
 .select-style select{
+  position: absolute;
   -webkit-appearance: none;
   appearance: none;
-  color: #007A8D;
-  background: rgba(255,255,255,1);
-  width: 100%;
-  height: 40px;
+  padding: 0 10px;
+  margin: 0 0;
   font-size: 1em;
   font-weight: 400;
   border: none;
+
 }
-.hidden-list{
-  display: none;
-}
+
 
 /* Stylizing the checkbox */
 
 
 .label-container{
+  font-weight: 200;
   display: inline;
   position: relative;
   padding-left: 25px;
