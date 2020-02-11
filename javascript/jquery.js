@@ -6,6 +6,7 @@ $(document).ready(function(){
 
   
   var courses =[]
+  var cities =[]
 
     let schoolship_offer= {
         id: "",
@@ -37,8 +38,9 @@ $(document).ready(function(){
         url: 'https://testapi.io/api/redealumni/scholarships',
         success: function(data){
           
-          const cities =[]
           
+          // Here I'm working on duplicate data:
+
           $.each(data, function(i, data){
             
             cities[i] = data.campus.city
@@ -63,14 +65,16 @@ $(document).ready(function(){
             return newCities
           })
 
-          $.each(newCourses, function(i, data){
+          $.each(newCourses, function(i){
             
             courseSelect.append('<option value="'+newCourses[i]+'">'+ newCourses[i] +' </option>')
 
             return newCourses
           })
           
+          // Here, I'm working on the api request
 
+          
             $.each(data, function(i, data){
                 
                 schoolship_offer.id = i
