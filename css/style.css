@@ -195,9 +195,7 @@ p{
     font-size: 1em;
 }
 
-.divisor{
-    margin: 20px 30px;
-    height: 3px;
-    background: rgba(235, 235, 235, .6);
-    border: none;
+#main-form span{
+    color: #0FA866;
+    font-weight: 500;
 }

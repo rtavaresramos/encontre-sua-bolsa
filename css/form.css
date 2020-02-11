@@ -114,3 +114,8 @@
 .label-container input:checked {
   background: #18acc4;
 }
+
+/* Stylizing the Button */
+#main-form button{
+  font-weight: 700;
+}

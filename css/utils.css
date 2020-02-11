@@ -44,6 +44,13 @@
 }
 
 /* Working on button styles */
+.button-md{
+    font-weight: 800;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 4px;
+}
 
 .button-lg{
     width: 255px;
@@ -52,9 +59,7 @@
     margin: 0 -4px;
 }
 .b-outline-choosed{
-    position: relative;
     border: 2px solid #007A8D;
-    height: 2.2em;
     background: #fff;
 }
 .b-outline-not-choosed{
@@ -68,6 +73,16 @@
 }
 .disabled{
     color: #6a6a6a;
+}
+.disabled-btn{
+    font-weight: 800;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #949494;
+    margin: 0 4px;
+    color: #949494;
+    background: #dadada;
 }
 .b-outline-circle{
     border: 3px solid #18ACC4;
@@ -83,7 +98,7 @@
     color: #007A8D;
 }
 
-/* Working with colors of text */
+/* Working with colors and text */
 
 .white-text{
     color: #fff;
@@ -103,6 +118,7 @@
 
 }
 
+
 /* Setting Upper und Lowercase for text */
 
 .set-upper{
@@ -111,7 +127,10 @@
     text-transform: lowercase;
 }
 
-
+/* Setting font size classes */
+.sm-text{
+    font-size: .2em;
+}
 /* Working with margins */
 
 .ml-1{
@@ -176,6 +195,30 @@
 .mt-8{
     margin-top: 40px;
 }
+.mb-1{
+    margin-bottom: 5px;
+}
+.mb-2{
+    margin-bottom: 10px;
+}
+.mb-3{
+    margin-bottom: 15px;
+}
+.mb-4{
+    margin-bottom: 20px;
+}
+.mb-5{
+    margin-bottom: 25px;
+}
+.mb-6{
+    margin-bottom: 30px;
+}
+.mb-7{
+    margin-bottom: 35px;
+}
+.mb-8{
+    margin-bottom: 40px;
+}
 /* Making the Card layout it will be showed on the home page */
 
 .card-container{
@@ -186,8 +229,17 @@
     margin: 0 10px;
 }
 
-.set-upper{
-    text-transform: uppercase;
-}.set-lower{
-    text-transform: lowercase;
+/* Working with images */
+
+.img-adjust{
+    margin: 0 0;
+    width: 60%;
+    height: auto;
+}
+
+.divisor{
+    margin: 20px 0;
+    height: 3px;
+    background: rgba(235, 235, 235, .6);
+    border: none;
 }
