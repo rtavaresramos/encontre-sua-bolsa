@@ -4,7 +4,7 @@ $(document).ready(function(){
   var citySelect = $('#city-select')
   var courseSelect = $('#course-select')
 
-  var cities =[]
+  
   var courses =[]
 
     let schoolship_offer= {
@@ -37,6 +37,7 @@ $(document).ready(function(){
         url: 'https://testapi.io/api/redealumni/scholarships',
         success: function(data){
           
+          const cities =[]
           
           $.each(data, function(i, data){
             
@@ -44,8 +45,31 @@ $(document).ready(function(){
 
             return cities
           })
+
+          $.each(data, function(i, data){
+            
+            courses[i] = data.course.name
+
+            return courses
+          })
           
-          console.log(cities)
+          const newCourses = [ ...new Set( courses ) ];
+          const newCities = [ ...new Set( cities ) ];
+
+          $.each(newCities, function(i){
+            
+            citySelect.append('<option value="'+newCities[i]+'">'+ newCities[i] +' </option>')
+
+            return newCities
+          })
+
+          $.each(newCourses, function(i, data){
+            
+            courseSelect.append('<option value="'+newCourses[i]+'">'+ newCourses[i] +' </option>')
+
+            return newCourses
+          })
+          
 
             $.each(data, function(i, data){
                 
@@ -67,8 +91,6 @@ $(document).ready(function(){
                 schoolship_offer.enabled = data.enabled
                 
                 container.append("<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+schoolship_offer.id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+schoolship_offer.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ schoolship_offer.course.name +"</h5><p class='sm-text'>"+ schoolship_offer.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ schoolship_offer.discount_percentage +"</span><br><span>R$ "+ schoolship_offer.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>")
-
-                console.log(schoolship_offer.course.name)
                 
             })
 
