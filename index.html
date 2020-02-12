@@ -218,7 +218,8 @@
                                   <div class="col col-2" >  
                                     <h4 class="black-text set-upper">Selecione sua cidade</h4>
                                         <div class="select-style">
-                                          <select id="city-select"type="" class="black-text">
+                                          <select id="city-select"type="" class="black-text">\
+                                              <option value="all"> Todas </option>
                                           </select>
                                             <span class="arrow-icon"></span>
                                         </div>
@@ -226,7 +227,9 @@
                                   <div class="col col-2" >
                                     <h4 class="black-text set-upper">Selecione o curso de sua prefernêcia</h4>
                                     <div class="select-style">
-                                        <select id="course-select" type="" class="black-text">
+                                        <select id="course-select" type="" value="" class="black-text">
+                                            <option value="all"> Todas </option>
+
                                         </select>
                                           <span class="arrow-icon"></span>
                                     </div>
@@ -253,7 +256,7 @@
                                       <p class="black-text"><span id="value" for="choose-price">R$ 10.000,00</span></p>
                                       
                                       <div class="slide-container" style="margin-top: 20px;">
-                                          <input type="range" min="100" 
+                                          <input id="my-range" type="range" min="100" 
                                           max="10000" step="0.01"value="10000" id="my-range" class="slider">
                                       </div>
                                   </div>
@@ -370,6 +373,6 @@
     </footer> 
     <script src="./javascript/jquery.js"></script>
     <script src="./javascript/modal.js"></script>
-    <script src="./javascript/script.js"></script>
+    <script src="./javascript/range.js"></script>
 </body>
 </html>

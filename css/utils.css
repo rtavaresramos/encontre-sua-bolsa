@@ -237,12 +237,7 @@
     height: 50%;
     margin: 20px 40px;
 }
-table{
-    width: 100%;
-}
-tr{
-    border-bottom: 5px solid red;
-}
+
 .divisor{
     margin: 20px 0;
     height: 3px;

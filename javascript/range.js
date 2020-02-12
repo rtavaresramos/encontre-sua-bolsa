@@ -13,7 +13,6 @@ slider.oninput = function(){
     output.innerHTML = parseFloat(this.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     
     var a = parseFloat(this.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    console.log(a)
     
 }
 

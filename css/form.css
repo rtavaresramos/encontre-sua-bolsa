@@ -120,3 +120,21 @@
 #main-form button{
   font-weight: 700;
 }
+
+/* Stylizing the #main form */
+
+table{
+  width: 100%;
+}
+
+
+td{
+  border-bottom: 3px solid  rgba(235, 235, 235, .6);
+
+}
+.hidden-jquery-item{
+  display: none;
+}
+.show-jquery-item{
+  display: none;
+}
