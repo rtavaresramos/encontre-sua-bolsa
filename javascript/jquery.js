@@ -73,7 +73,8 @@ $(document).ready(function(){
           // Here was added the filter of cities and universty course working together
 
         $('select').change( function(){
-            
+          $('#form-submit').addClass('disabled-btn')
+          $('#form-submit').removeClass('enabled-btn')
             $('tr').remove()
 
 
@@ -92,6 +93,21 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
+  
+                      $('.tr-checkbox').change( function(){
+                        e = $('.tr-checkbox')
+              
+                        $('#form-submit').addClass('disabled-btn')
+                          $('#form-submit').removeClass('enabled-btn')
+              
+                        for( var i = 0; i< e.length ; i++){
+              
+                            $($(e[i]).is(':checked')).each(function(){
+                                $('#form-submit').removeClass('disabled-btn')
+                                $('#form-submit').addClass('enabled-btn')
+                          })
+                          }
+                        })
                     }
                   }
               }else{
@@ -102,7 +118,22 @@ $(document).ready(function(){
                     console.log('curso presencial na tela')
                     if(rangeValue >= data.price_with_discount){
                       
-                      container.append( auxCity[i])
+                      container.append( auxCity[i]) 
+  
+                      $('.tr-checkbox').change( function(){
+                        e = $('.tr-checkbox')
+              
+                        $('#form-submit').addClass('disabled-btn')
+                          $('#form-submit').removeClass('enabled-btn')
+              
+                        for( var i = 0; i< e.length ; i++){
+              
+                            $($(e[i]).is(':checked')).each(function(){
+                                $('#form-submit').removeClass('disabled-btn')
+                                $('#form-submit').addClass('enabled-btn')
+                          })
+                          }
+                        })
                     }
   
                   }
@@ -113,6 +144,21 @@ $(document).ready(function(){
                           if(rangeValue >= data.price_with_discount){
                       
                             container.append( auxCity[i])
+                             
+                            $('.tr-checkbox').change( function(){
+                              e = $('.tr-checkbox')
+                    
+                              $('#form-submit').addClass('disabled-btn')
+                                $('#form-submit').removeClass('enabled-btn')
+                    
+                              for( var i = 0; i< e.length ; i++){
+                    
+                                  $($(e[i]).is(':checked')).each(function(){
+                                      $('#form-submit').removeClass('disabled-btn')
+                                      $('#form-submit').addClass('enabled-btn')
+                                })
+                                }
+                              })
                           }
   
                         }
@@ -123,6 +169,21 @@ $(document).ready(function(){
                                 if(rangeValue >= data.price_with_discount){
                       
                                   container.append( auxCity[i])
+                                   
+                                  $('.tr-checkbox').change( function(){
+                                    e = $('.tr-checkbox')
+                          
+                                    $('#form-submit').addClass('disabled-btn')
+                                      $('#form-submit').removeClass('enabled-btn')
+                          
+                                    for( var i = 0; i< e.length ; i++){
+                          
+                                        $($(e[i]).is(':checked')).each(function(){
+                                            $('#form-submit').removeClass('disabled-btn')
+                                            $('#form-submit').addClass('enabled-btn')
+                                      })
+                                      }
+                                    })
                                 }
                               }
                                 }
@@ -141,6 +202,21 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
+                       
+                      $('.tr-checkbox').change( function(){
+                        e = $('.tr-checkbox')
+              
+                        $('#form-submit').addClass('disabled-btn')
+                          $('#form-submit').removeClass('enabled-btn')
+              
+                        for( var i = 0; i< e.length ; i++){
+              
+                            $($(e[i]).is(':checked')).each(function(){
+                                $('#form-submit').removeClass('disabled-btn')
+                                $('#form-submit').addClass('enabled-btn')
+                          })
+                          }
+                        })
                     }
                   }
               }else{
@@ -151,6 +227,21 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
+                       
+                      $('.tr-checkbox').change( function(){
+                        e = $('.tr-checkbox')
+              
+                        $('#form-submit').addClass('disabled-btn')
+                          $('#form-submit').removeClass('enabled-btn')
+              
+                        for( var i = 0; i< e.length ; i++){
+              
+                            $($(e[i]).is(':checked')).each(function(){
+                                $('#form-submit').removeClass('disabled-btn')
+                                $('#form-submit').addClass('enabled-btn')
+                          })
+                          }
+                        })
                     }
                   }
                     }else{
@@ -160,6 +251,21 @@ $(document).ready(function(){
                           if(rangeValue >= data.price_with_discount){
                       
                             container.append( auxCity[i])
+                             
+                            $('.tr-checkbox').change( function(){
+                              e = $('.tr-checkbox')
+                    
+                              $('#form-submit').addClass('disabled-btn')
+                                $('#form-submit').removeClass('enabled-btn')
+                    
+                              for( var i = 0; i< e.length ; i++){
+                    
+                                  $($(e[i]).is(':checked')).each(function(){
+                                      $('#form-submit').removeClass('disabled-btn')
+                                      $('#form-submit').addClass('enabled-btn')
+                                })
+                                }
+                              })
                           }
                         }
                           }else{
@@ -169,6 +275,21 @@ $(document).ready(function(){
                                 if(rangeValue >= data.price_with_discount){
                       
                                   container.append( auxCity[i])
+                                   
+                                  $('.tr-checkbox').change( function(){
+                                    e = $('.tr-checkbox')
+                          
+                                    $('#form-submit').addClass('disabled-btn')
+                                      $('#form-submit').removeClass('enabled-btn')
+                          
+                                    for( var i = 0; i< e.length ; i++){
+                          
+                                        $($(e[i]).is(':checked')).each(function(){
+                                            $('#form-submit').removeClass('disabled-btn')
+                                            $('#form-submit').addClass('enabled-btn')
+                                      })
+                                      }
+                                    })
                                 }
                               }
                                 }
@@ -185,7 +306,8 @@ $(document).ready(function(){
           // Working on checkbox elements when the select have not been changed
 
         $('.input-jquery').change( function(){
-
+          $('#form-submit').addClass('disabled-btn')
+          $('#form-submit').removeClass('enabled-btn')
           $('tr').remove()
 
 
@@ -206,6 +328,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
             }else{
@@ -216,7 +353,22 @@ $(document).ready(function(){
                   console.log('curso presencial na tela')
                   if(rangeValue >= data.price_with_discount){
                     
-                    container.append( auxCity[i])
+                    container.append( auxCity[i]) 
+
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
 
                 }
@@ -227,6 +379,21 @@ $(document).ready(function(){
                         if(rangeValue >= data.price_with_discount){
                     
                           container.append( auxCity[i])
+                           
+                          $('.tr-checkbox').change( function(){
+                            e = $('.tr-checkbox')
+                  
+                            $('#form-submit').addClass('disabled-btn')
+                              $('#form-submit').removeClass('enabled-btn')
+                  
+                            for( var i = 0; i< e.length ; i++){
+                  
+                                $($(e[i]).is(':checked')).each(function(){
+                                    $('#form-submit').removeClass('disabled-btn')
+                                    $('#form-submit').addClass('enabled-btn')
+                              })
+                              }
+                            })
                         }
 
                       }
@@ -237,6 +404,21 @@ $(document).ready(function(){
                               if(rangeValue >= data.price_with_discount){
                     
                                 container.append( auxCity[i])
+                                 
+                                $('.tr-checkbox').change( function(){
+                                  e = $('.tr-checkbox')
+                        
+                                  $('#form-submit').addClass('disabled-btn')
+                                    $('#form-submit').removeClass('enabled-btn')
+                        
+                                  for( var i = 0; i< e.length ; i++){
+                        
+                                      $($(e[i]).is(':checked')).each(function(){
+                                          $('#form-submit').removeClass('disabled-btn')
+                                          $('#form-submit').addClass('enabled-btn')
+                                    })
+                                    }
+                                  })
                               }
                             }
                               }
@@ -255,6 +437,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+                     
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
             }else{
@@ -265,6 +462,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+                     
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
                   }else{
@@ -274,6 +486,21 @@ $(document).ready(function(){
                         if(rangeValue >= data.price_with_discount){
                     
                           container.append( auxCity[i])
+                           
+                          $('.tr-checkbox').change( function(){
+                            e = $('.tr-checkbox')
+                  
+                            $('#form-submit').addClass('disabled-btn')
+                              $('#form-submit').removeClass('enabled-btn')
+                  
+                            for( var i = 0; i< e.length ; i++){
+                  
+                                $($(e[i]).is(':checked')).each(function(){
+                                    $('#form-submit').removeClass('disabled-btn')
+                                    $('#form-submit').addClass('enabled-btn')
+                              })
+                              }
+                            })
                         }
                       }
                         }else{
@@ -283,6 +510,21 @@ $(document).ready(function(){
                               if(rangeValue >= data.price_with_discount){
                     
                                 container.append( auxCity[i])
+                                 
+                                $('.tr-checkbox').change( function(){
+                                  e = $('.tr-checkbox')
+                        
+                                  $('#form-submit').addClass('disabled-btn')
+                                    $('#form-submit').removeClass('enabled-btn')
+                        
+                                  for( var i = 0; i< e.length ; i++){
+                        
+                                      $($(e[i]).is(':checked')).each(function(){
+                                          $('#form-submit').removeClass('disabled-btn')
+                                          $('#form-submit').addClass('enabled-btn')
+                                    })
+                                    }
+                                  })
                               }
                             }
                               }
@@ -298,8 +540,8 @@ $(document).ready(function(){
           // Working with the range component
 
         $('#my-range').change( function(){
-          
-
+          $('#form-submit').addClass('disabled-btn')
+          $('#form-submit').removeClass('enabled-btn')
           $('tr').remove()
 
           $.each(data, function(i, data){
@@ -317,6 +559,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
             }else{
@@ -327,7 +584,22 @@ $(document).ready(function(){
                   console.log('curso presencial na tela')
                   if(rangeValue >= data.price_with_discount){
                     
-                    container.append( auxCity[i])
+                    container.append( auxCity[i]) 
+
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
 
                 }
@@ -338,6 +610,21 @@ $(document).ready(function(){
                         if(rangeValue >= data.price_with_discount){
                     
                           container.append( auxCity[i])
+                           
+                          $('.tr-checkbox').change( function(){
+                            e = $('.tr-checkbox')
+                  
+                            $('#form-submit').addClass('disabled-btn')
+                              $('#form-submit').removeClass('enabled-btn')
+                  
+                            for( var i = 0; i< e.length ; i++){
+                  
+                                $($(e[i]).is(':checked')).each(function(){
+                                    $('#form-submit').removeClass('disabled-btn')
+                                    $('#form-submit').addClass('enabled-btn')
+                              })
+                              }
+                            })
                         }
 
                       }
@@ -348,6 +635,21 @@ $(document).ready(function(){
                               if(rangeValue >= data.price_with_discount){
                     
                                 container.append( auxCity[i])
+                                 
+                                $('.tr-checkbox').change( function(){
+                                  e = $('.tr-checkbox')
+                        
+                                  $('#form-submit').addClass('disabled-btn')
+                                    $('#form-submit').removeClass('enabled-btn')
+                        
+                                  for( var i = 0; i< e.length ; i++){
+                        
+                                      $($(e[i]).is(':checked')).each(function(){
+                                          $('#form-submit').removeClass('disabled-btn')
+                                          $('#form-submit').addClass('enabled-btn')
+                                    })
+                                    }
+                                  })
                               }
                             }
                               }
@@ -366,6 +668,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+                     
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
             }else{
@@ -376,6 +693,21 @@ $(document).ready(function(){
                   if(rangeValue >= data.price_with_discount){
                     
                     container.append( auxCity[i])
+                     
+                    $('.tr-checkbox').change( function(){
+                      e = $('.tr-checkbox')
+            
+                      $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+            
+                      for( var i = 0; i< e.length ; i++){
+            
+                          $($(e[i]).is(':checked')).each(function(){
+                              $('#form-submit').removeClass('disabled-btn')
+                              $('#form-submit').addClass('enabled-btn')
+                        })
+                        }
+                      })
                   }
                 }
                   }else{
@@ -385,6 +717,21 @@ $(document).ready(function(){
                         if(rangeValue >= data.price_with_discount){
                     
                           container.append( auxCity[i])
+                           
+                          $('.tr-checkbox').change( function(){
+                            e = $('.tr-checkbox')
+                  
+                            $('#form-submit').addClass('disabled-btn')
+                              $('#form-submit').removeClass('enabled-btn')
+                  
+                            for( var i = 0; i< e.length ; i++){
+                  
+                                $($(e[i]).is(':checked')).each(function(){
+                                    $('#form-submit').removeClass('disabled-btn')
+                                    $('#form-submit').addClass('enabled-btn')
+                              })
+                              }
+                            })
                         }
                       }
                         }else{
@@ -394,6 +741,21 @@ $(document).ready(function(){
                               if(rangeValue >= data.price_with_discount){
                     
                                 container.append( auxCity[i])
+                                 
+                                $('.tr-checkbox').change( function(){
+                                  e = $('.tr-checkbox')
+                        
+                                  $('#form-submit').addClass('disabled-btn')
+                                    $('#form-submit').removeClass('enabled-btn')
+                        
+                                  for( var i = 0; i< e.length ; i++){
+                        
+                                      $($(e[i]).is(':checked')).each(function(){
+                                          $('#form-submit').removeClass('disabled-btn')
+                                          $('#form-submit').addClass('enabled-btn')
+                                    })
+                                    }
+                                  })
                               }
                             }
                               }
@@ -403,33 +765,26 @@ $(document).ready(function(){
             }
 
             }
-          
-  
             })
         })
 
         // Working on check verification for change the button class
 
-        $(checkValue).change( function(){
+        $('.tr-checkbox').change( function(){
+          e = $('.tr-checkbox')
 
+          $('#form-submit').addClass('disabled-btn')
+          $('#form-submit').removeClass('enabled-btn')
 
-          $('.tr-checkbox:checked').each(function(i, data){
-          
+          for( var i = 0; i< e.length ; i++){
 
-                $('#form-submit').removeClass('disabled-btn')
-                $('#form-submit').addClass('enabled-btn')
-
-              // }else{
-              //   $('#form-submit').removeClass('enabled-btn')
-              //   $('#form-submit').addClass('disabled-btn')
-              //   // console.log(this)
-
-              // }
-
-              })
-        })
-
+              $($(e[i]).is(':checked')).each(function(){
+                  $('#form-submit').removeClass('disabled-btn')
+                  $('#form-submit').addClass('enabled-btn')
+            })
+            }
+          })
         }
-	})
-});
+      })
+  })
 
