@@ -1,7 +1,6 @@
 
-var inputCheck = document.querySelector('input[type=checkbox]')
 var slider = document.getElementById('my-range')
-var output = document.getElementById('value')
+var output = document.getElementById('range-value')
 
 
 output.innerHTML - slider.value
@@ -11,8 +10,6 @@ output.innerHTML - slider.value
 slider.oninput = function(){
     
     output.innerHTML = parseFloat(this.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    
-    var a = parseFloat(this.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     
 }
 

@@ -233,13 +233,12 @@
 
 .img-adjust{
     margin: 0 0;
-    width: auto;
-    height: 50%;
-    margin: 20px 40px;
+    width: 100%;
+    height: auto;
 }
 
 .divisor{
-    margin: 20px 0;
+    margin-top: 20px;
     height: 3px;
     background: rgba(235, 235, 235, .6);
     border: none;

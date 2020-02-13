@@ -132,9 +132,22 @@ td{
   border-bottom: 3px solid  rgba(235, 235, 235, .6);
 
 }
-.hidden-jquery-item{
-  display: none;
+.td-checkbox{
+  width:30px;
+  margin-top: 50px;
 }
-.show-jquery-item{
-  display: none;
+.td-img{
+  width: 150px;
+  height: 100px;
+  margin: 0 10px;
+  text-align: center;
+}
+.td-course{
+  padding: 0 50px;
+  font-size: 1.15em;
+  
+}
+.td-discount{
+  padding-right: 0;
+  font-size: 1.15em;
 }

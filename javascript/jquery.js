@@ -3,8 +3,7 @@ $(document).ready(function(){
   var container = $('#schoolship-container')
   var citySelect = $('#city-select')
   var courseSelect = $('#course-select')
-  var checkPresentialConfirmation = $('#presencial')
-  var checkEadConfirmation = $('#ead')
+  var rangeValue = $('#my-range')
   
   
   var courses =[]
@@ -57,11 +56,10 @@ $(document).ready(function(){
             
             var id = i
 
-            
-              
-              auxCity[i] = "<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>"
+              auxCity[i] = "<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td class='td-checkbox'><label class='label-container black-text mr-4'><input class='tr-checkbox mt-3' type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td class='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td class='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td class='td-discount'><p class='align-end'>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>"
              
               container.append( auxCity[i])
+
             return auxCity
           })
           
@@ -77,16 +75,18 @@ $(document).ready(function(){
               courseSelect = $('#course-select').val()
               citySelect = $('#city-select').val()
               
+      
               id = i
-              
+
               if($('#presencial').is(':checked')){
 
                 if(citySelect == 'all' && courseSelect == 'all'){
                   
                   if(data.course.kind == 'Presencial'){
-                    console.log('curso presencial na tela')
-                    container.append( auxCity[i])
-  
+                    if(rangeValue >= data.price_with_discount){
+                      
+                      container.append( auxCity[i])
+                    }
                   }
               }else{
                 
@@ -94,24 +94,30 @@ $(document).ready(function(){
   
                   if(data.course.kind == 'Presencial'){
                     console.log('curso presencial na tela')
-                    container.append( auxCity[i])
+                    if(rangeValue >= data.price_with_discount){
+                      
+                      container.append( auxCity[i])
+                    }
   
                   }
                     }else{
                 
                       if(citySelect == data.campus.city && courseSelect == 'all'){
                         if(data.course.kind == 'Presencial'){
-                          console.log('curso presencial na tela')
-                          container.append( auxCity[i])
+                          if(rangeValue >= data.price_with_discount){
+                      
+                            container.append( auxCity[i])
+                          }
   
                         }
                           }else{
                 
                             if(citySelect == data.campus.city && courseSelect == data.course.name ){
                               if(data.course.kind == 'Presencial'){
-                                console.log('curso presencial na tela')
-                                container.append( auxCity[i])
-  
+                                if(rangeValue >= data.price_with_discount){
+                      
+                                  container.append( auxCity[i])
+                                }
                               }
                                 }
                           }
@@ -126,34 +132,38 @@ $(document).ready(function(){
                 if(citySelect == 'all' && courseSelect == 'all'){
                   
                   if(data.course.kind == 'EaD'){
-                    console.log('curso ead na tela')
-                    container.append( auxCity[i])
-  
+                    if(rangeValue >= data.price_with_discount){
+                      
+                      container.append( auxCity[i])
+                    }
                   }
               }else{
                 
                 if(citySelect == 'all' && courseSelect == data.course.name ){
   
                   if(data.course.kind == 'EaD'){
-                    console.log('curso ead na tela')
-                    container.append( auxCity[i])
-  
+                    if(rangeValue >= data.price_with_discount){
+                      
+                      container.append( auxCity[i])
+                    }
                   }
                     }else{
                 
                       if(citySelect == data.campus.city && courseSelect == 'all'){
                         if(data.course.kind == 'EaD'){
-                          console.log('curso ead na tela')
-                          container.append( auxCity[i])
-  
+                          if(rangeValue >= data.price_with_discount){
+                      
+                            container.append( auxCity[i])
+                          }
                         }
                           }else{
                 
                             if(citySelect == data.campus.city && courseSelect == data.course.name ){
                               if(data.course.kind == 'EaD'){
-                                console.log('curso ead na tela')
-                                container.append( auxCity[i])
-  
+                                if(rangeValue >= data.price_with_discount){
+                      
+                                  container.append( auxCity[i])
+                                }
                               }
                                 }
                           }
@@ -166,9 +176,7 @@ $(document).ready(function(){
               })
           })
 
-        // Working on checkbox elements
-
-
+        // Working on checkbox elements when the select have not been changed
 
         $('.input-jquery').change( function(){
             
@@ -187,9 +195,10 @@ $(document).ready(function(){
               if(citySelect == 'all' && courseSelect == 'all'){
                 
                 if(data.course.kind == 'Presencial'){
-                  console.log('curso presencial na tela')
-                  container.append( auxCity[i])
-
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
                 }
             }else{
               
@@ -197,24 +206,30 @@ $(document).ready(function(){
 
                 if(data.course.kind == 'Presencial'){
                   console.log('curso presencial na tela')
-                  container.append( auxCity[i])
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
 
                 }
                   }else{
               
                     if(citySelect == data.campus.city && courseSelect == 'all'){
                       if(data.course.kind == 'Presencial'){
-                        console.log('curso presencial na tela')
-                        container.append( auxCity[i])
+                        if(rangeValue >= data.price_with_discount){
+                    
+                          container.append( auxCity[i])
+                        }
 
                       }
                         }else{
               
                           if(citySelect == data.campus.city && courseSelect == data.course.name ){
                             if(data.course.kind == 'Presencial'){
-                              console.log('curso presencial na tela')
-                              container.append( auxCity[i])
-
+                              if(rangeValue >= data.price_with_discount){
+                    
+                                container.append( auxCity[i])
+                              }
                             }
                               }
                         }
@@ -229,34 +244,38 @@ $(document).ready(function(){
               if(citySelect == 'all' && courseSelect == 'all'){
                 
                 if(data.course.kind == 'EaD'){
-                  console.log('curso ead na tela')
-                  container.append( auxCity[i])
-
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
                 }
             }else{
               
               if(citySelect == 'all' && courseSelect == data.course.name ){
 
                 if(data.course.kind == 'EaD'){
-                  console.log('curso ead na tela')
-                  container.append( auxCity[i])
-
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
                 }
                   }else{
               
                     if(citySelect == data.campus.city && courseSelect == 'all'){
                       if(data.course.kind == 'EaD'){
-                        console.log('curso ead na tela')
-                        container.append( auxCity[i])
-
+                        if(rangeValue >= data.price_with_discount){
+                    
+                          container.append( auxCity[i])
+                        }
                       }
                         }else{
               
                           if(citySelect == data.campus.city && courseSelect == data.course.name ){
                             if(data.course.kind == 'EaD'){
-                              console.log('curso ead na tela')
-                              container.append( auxCity[i])
-
+                              if(rangeValue >= data.price_with_discount){
+                    
+                                container.append( auxCity[i])
+                              }
                             }
                               }
                         }
@@ -270,29 +289,120 @@ $(document).ready(function(){
             })
         })
         
+        // Working with the range component
+
+        $('#my-range').change( function(){
+          
+          $('tr').remove()
+
+          $.each(data, function(i, data){
+            courseSelect = $('#course-select').val()
+            citySelect = $('#city-select').val()
+            rangeValue = $('#my-range').val()
+
+            id = i
+
+            if($('#presencial').is(':checked')){
+
+              if(citySelect == 'all' && courseSelect == 'all'){
+                
+                if(data.course.kind == 'Presencial'){
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
+                }
+            }else{
+              
+              if(citySelect == 'all' && courseSelect == data.course.name ){
+
+                if(data.course.kind == 'Presencial'){
+                  console.log('curso presencial na tela')
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
+
+                }
+                  }else{
+              
+                    if(citySelect == data.campus.city && courseSelect == 'all'){
+                      if(data.course.kind == 'Presencial'){
+                        if(rangeValue >= data.price_with_discount){
+                    
+                          container.append( auxCity[i])
+                        }
+
+                      }
+                        }else{
+              
+                          if(citySelect == data.campus.city && courseSelect == data.course.name ){
+                            if(data.course.kind == 'Presencial'){
+                              if(rangeValue >= data.price_with_discount){
+                    
+                                container.append( auxCity[i])
+                              }
+                            }
+                              }
+                        }
+                  }
+  
+            }
+
+            }
+
+            if($('#ead').is(':checked')){
+
+              if(citySelect == 'all' && courseSelect == 'all'){
+                
+                if(data.course.kind == 'EaD'){
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
+                }
+            }else{
+              
+              if(citySelect == 'all' && courseSelect == data.course.name ){
+
+                if(data.course.kind == 'EaD'){
+                  if(rangeValue >= data.price_with_discount){
+                    
+                    container.append( auxCity[i])
+                  }
+                }
+                  }else{
+              
+                    if(citySelect == data.campus.city && courseSelect == 'all'){
+                      if(data.course.kind == 'EaD'){
+                        if(rangeValue >= data.price_with_discount){
+                    
+                          container.append( auxCity[i])
+                        }
+                      }
+                        }else{
+              
+                          if(citySelect == data.campus.city && courseSelect == data.course.name ){
+                            if(data.course.kind == 'EaD'){
+                              if(rangeValue >= data.price_with_discount){
+                    
+                                container.append( auxCity[i])
+                              }
+                            }
+                              }
+                        }
+                  }
+  
+            }
+
+            }
+          
+  
+            })
+        })
+
+        
         }
 	})
 });
 
-
-
-            
-// if(citySelect == 'all' && courseSelect == 'all'){
-//   container.append("<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>")
-// }else{
-
-// if(citySelect == 'all' && courseSelect == data.course.name ){
-//   container.append("<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>")
-//     }else{
-
-//       if(citySelect == data.campus.city && courseSelect == 'all'){
-//         container.append("<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>")
-//           }else{
-
-//             if(citySelect == data.campus.city && courseSelect == data.course.name ){
-//               container.append("<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td id='td-checkbox'><label class='label-container black-text mr-4'><input type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td id='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td id='td-course'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7'><td id='td-discount'><p>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span>R$ "+ data.price_with_discount +"/mês</span></p></td></div></div></div></tr><hr class='divisor mt-8 mb-8'>")
-//                 }
-//           }
-//     }
-
-// }
