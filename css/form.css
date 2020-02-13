@@ -136,6 +136,9 @@ td{
   width:30px;
   margin-top: 50px;
 }
+.td-checkbox span{
+  margin-top: 15px;
+}
 .td-img{
   width: 150px;
   height: 100px;

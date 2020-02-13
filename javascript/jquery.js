@@ -4,11 +4,15 @@ $(document).ready(function(){
   var citySelect = $('#city-select')
   var courseSelect = $('#course-select')
   var rangeValue = $('#my-range')
+  var checkValue = $('.tr-checkbox')
+  var subButton = $('#form-submit')
   
   
+  
+  var idCheckbox =[]
   var courses =[]
   var cities =[]
-  var auxCity = []
+  var auxCity =[]
 
 
     
@@ -18,41 +22,43 @@ $(document).ready(function(){
         success: function(data){
           
           
-          // Here was add the controll with duplicate data for select tags
+          // Here was added the controll with duplicate data for select tags
 
-          $.each(data, function(i, data){
+       
+
+        $.each(data, function(i, data){
             
             cities[i] = data.campus.city
 
             return cities
-          })
+        })
 
-          $.each(data, function(i, data){
+        $.each(data, function(i, data){
             
             courses[i] = data.course.name
 
             return courses
-          })
-          
-          const newCourses = [ ...new Set( courses ) ];
-          const newCities = [ ...new Set( cities ) ];
+        })
 
-          $.each(newCities, function(i){
+        const newCourses = [ ...new Set( courses ) ];
+        const newCities = [ ...new Set( cities ) ];
+
+        $.each(newCities, function(i){
             
             citySelect.append('<option value="'+newCities[i]+'">'+ newCities[i] +' </option>')
 
-          }) 
+        }) 
           
-          $.each(newCourses, function(i){
+        $.each(newCourses, function(i){
             
             courseSelect.append('<option value="'+newCourses[i]+'">'+ newCourses[i] +' </option>')
 
             return newCourses
-          })
+        })
 
-          // Here, I'm working on the api request
+          // Here, was done the api request and save datas inside one matrix
 
-          $.each(data, function(i, data){
+        $.each(data, function(i, data){
             
             var id = i
 
@@ -61,12 +67,12 @@ $(document).ready(function(){
               container.append( auxCity[i])
 
             return auxCity
-          })
+        })
           
          
           // Here was added the filter of cities and universty course working together
 
-          $('select').change( function(){
+        $('select').change( function(){
             
             $('tr').remove()
 
@@ -74,7 +80,7 @@ $(document).ready(function(){
             $.each(data, function(i, data){
               courseSelect = $('#course-select').val()
               citySelect = $('#city-select').val()
-              
+              rangeValue = $('#my-range').val()
       
               id = i
 
@@ -174,18 +180,20 @@ $(document).ready(function(){
               }
               
               })
-          })
+        })
 
-        // Working on checkbox elements when the select have not been changed
+          // Working on checkbox elements when the select have not been changed
 
         $('.input-jquery').change( function(){
-            
+
           $('tr').remove()
 
 
           $.each(data, function(i, data){
             courseSelect = $('#course-select').val()
             citySelect = $('#city-select').val()
+            rangeValue = $('#my-range').val()
+            
             
 
             id = i
@@ -284,15 +292,14 @@ $(document).ready(function(){
             }
 
             }
-          
-  
             })
         })
         
-        // Working with the range component
+          // Working with the range component
 
         $('#my-range').change( function(){
           
+
           $('tr').remove()
 
           $.each(data, function(i, data){
@@ -401,7 +408,27 @@ $(document).ready(function(){
             })
         })
 
-        
+        // Working on check verification for change the button class
+
+        $(checkValue).change( function(){
+
+
+          $('.tr-checkbox:checked').each(function(i, data){
+          
+
+                $('#form-submit').removeClass('disabled-btn')
+                $('#form-submit').addClass('enabled-btn')
+
+              // }else{
+              //   $('#form-submit').removeClass('enabled-btn')
+              //   $('#form-submit').addClass('disabled-btn')
+              //   // console.log(this)
+
+              // }
+
+              })
+        })
+
         }
 	})
 });
