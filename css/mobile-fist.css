@@ -77,6 +77,21 @@
         left: 30%;
         font-size: 1.2em;
     }
+    
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 
 }
 
@@ -162,6 +177,21 @@
         left: 30%;
         font-size: 1.2em;
     }
+
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -246,6 +276,21 @@
         left: 30%;
         font-size: 1.2em;
     }
+
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 }
 /* // Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px){ 
@@ -329,7 +374,7 @@
     #first-section .my-account{
         position: absolute;
         top: 5%;
-        right: 35%;
+        right: 30%;
         font-size: 1.2em;
     }
     #first-section #menu{
@@ -338,6 +383,20 @@
         left: 30%;
         font-size: 1.2em;
     }
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 30%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (min-device-width:480px) and (max-device-width: 767.98px){ 
@@ -421,6 +480,21 @@
         left: 30%;
         font-size: 1.2em;
     }
+
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 }
 /* // Large devices (desktops, less than 1200px) */
 @media (min-device-width: 768px) and (max-device-width: 1023.98px){ 
@@ -507,4 +581,19 @@
         left: 40%;
         font-size: 1.2em;
     }
+
+    /* Here the First Section end */
+
+    #second-section{
+        position: relative;
+        height: 50px;
+    }
+    #second-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+
+    /* Here the Second Section end */
 }
