@@ -1,6 +1,87 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px){ 
+    
+    /* Here the Navbar start */
+
+    html, body, main{
+        overflow-x: hidden;
+    }
+    .m-f-hidde-item{
+        display: none;
+    }
+
+    nav{
+        
+        width: 40%;
+        height: 80px;
+        margin: 0 0;
+        padding: 0 0;
+        background: #fff;
+    }
+    header{
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    }
+    .m-f-show-item{
+        display: block;
+    }
+    #nav-content-1{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        border-right: 2px solid rgba(235, 235, 235, .6);
+        padding-right: 20px;
+
+    }
+    #navbrand{
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        border-right: 2px solid rgba(235, 235, 235, .6);
+        width: 45%;
+        height: 55px;
+
+    }
+    .nav-item{
+        margin: 0 0;
+        height: 3em;
+    }
+
+    /* Here the Navbar end */
+
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        font-size: 1.2em;
+    }
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px){ 
     html, body, main{
         overflow-x: hidden;
     }
@@ -54,17 +135,117 @@
         margin: 8px;
        
     }
+    /* Here the Navbar end */
 
-}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media screen and (max-width: 767.98px){ 
-   
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        font-size: 1.2em;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px){ 
+    html, body, main{
+        overflow-x: hidden;
+    }
+    .m-f-hidde-item{
+        display: none;
+    }
 
+    nav{
+        
+        width: 40%;
+        height: 80px;
+        margin: 0 0;
+        padding: 0 0;
+        background: #fff;
+    }
+    header{
+       
+        position: relative;
+        text-align: center;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    }
+    .m-f-show-item{
+        display: block;
+    }
+    #nav-content-1{
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        border-right: 2px solid rgba(235, 235, 235, .6);
+        padding-right: 20px;
+
+    }
+    #navbrand{
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        border-right: 2px solid rgba(235, 235, 235, .6);
+        width: 45%;
+        height: 55px;
+
+    }
+    .nav-item{
+        margin: 0 0;
+        height: 3em;
+    }
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    /* Here the Navbar end */
+
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        font-size: 1.2em;
+    }
 }
 /* // Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px){ 
@@ -130,6 +311,33 @@
         margin: 8px;
        
     }
+    /* Here the Navbar end */
+
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        font-size: 1.2em;
+    }
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (min-device-width:480px) and (max-device-width: 767.98px){ 
@@ -185,6 +393,33 @@
         width: 120%;
         margin: 8px;
        
+    }
+    /* Here the Navbar end */
+
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        font-size: 1.2em;
     }
 }
 /* // Large devices (desktops, less than 1200px) */
@@ -244,5 +479,32 @@
     }
     .card-container{
         margin: 0 10px;
+    }
+    /* Here the Navbar end */
+
+    #login-content{
+        position: absolute;
+        top:7%;
+        left: 25%;
+        width: 120%;
+        margin: 8px;
+       
+    }
+    #first-section{
+        z-index: 0;
+        position: relative;
+        height: 50px;
+    }
+    #first-section .my-account{
+        position: absolute;
+        top: 5%;
+        right: 35%;
+        font-size: 1.2em;
+    }
+    #first-section #menu{
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        font-size: 1.2em;
     }
 }
