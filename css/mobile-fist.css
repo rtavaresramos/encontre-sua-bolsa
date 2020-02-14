@@ -66,6 +66,7 @@
         height: 55px;
     }
     #first-section .my-account{
+        cursor: pointer;
         position: absolute;
         top: 5%;
         right: 35%;
@@ -149,6 +150,15 @@
         font-size: 1.2em;
     }
 
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
+
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -205,11 +215,84 @@
 
     /* Here the Fourth Section end */
 
+
     #footer__made-with-love{
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: 300;
-        height: 150px;
+        height: 120px;
     }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -283,6 +366,7 @@
         height: 50px;
     }
     #first-section .my-account{
+        cursor: pointer;
         position: absolute;
         top: 5%;
         right: 35%;
@@ -365,7 +449,14 @@
         padding: 150px 10px;
         font-size: 1.2em;
     }
-
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -421,6 +512,46 @@
     }
 
     /* Here the Fourth Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -494,6 +625,7 @@
         height: 50px;
     }
     #first-section .my-account{
+        cursor: pointer;
         position: absolute;
         top: 5%;
         right: 35%;
@@ -575,7 +707,14 @@
         padding: 150px 10px;
         font-size: 1.2em;
     }
-
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -631,6 +770,46 @@
     }
 
     /* Here the Fourth Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 /* // Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px){ 
@@ -781,11 +960,11 @@
     }
 
     #card-position{
-        padding-left: -5%;
+
     }
 
     .card-container{
-        width: 114%;
+        width: 120%;
         height: 250px;
         background: #fff;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
@@ -793,7 +972,14 @@
         padding: 150px 10px;
         font-size: 1.2em;
     }
-
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -811,7 +997,7 @@
         border-radius: 5px;
         margin-left: -20px;
         padding-top: 2%;
-        font-size: 1.2em;
+        font-size: 1.11em;
 
     }
 
@@ -849,6 +1035,45 @@
     }
 
     /* Here the Fourth Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        width: 100%;
+        height: 115px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 31%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (min-device-width:480px) and (max-device-width: 767.98px){ 
@@ -921,6 +1146,7 @@
         height: 50px;
     }
     #first-section .my-account{
+        cursor: pointer;
         position: absolute;
         top: 5%;
         right: 35%;
@@ -1002,7 +1228,14 @@
         padding: 150px 10px;
         font-size: 1.2em;
     }
-
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -1058,6 +1291,46 @@
     }
 
     /* Here the Fourth Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 /* // Large devices (desktops, less than 1200px) */
 @media (min-device-width: 768px) and (max-device-width: 1023.98px){ 
@@ -1133,6 +1406,7 @@
         height: 50px;
     }
     #first-section .my-account{
+        cursor: pointer;
         position: absolute;
         top: 5%;
         right: 35%;
@@ -1215,7 +1489,14 @@
         padding: 150px 10px;
         font-size: 1.2em;
     }
-
+    .card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+    }
     .b-outline-circle{
         border: 3px solid #18ACC4;
         width: 90px;
@@ -1271,6 +1552,46 @@
     }
 
     /* Here the Fourth Section end */
+
+
+    #footer__made-with-love{
+        font-size: 1.2em;
+        font-weight: 300;
+        height: 120px;
+    }
+
+    #footer-row-1{
+        background: #18ACC4;
+    }
+
+    #footer__div-wpp{
+        margin: 0 0;
+        width: 100%;
+        height: 100px;
+        background: rgb(0,122,141);
+    }
+    #footer__div-wpp i{
+       float: left;
+    }
+    #footer__div-wpp span{
+        width: 80%;
+        float: right;
+        font-size: 1.5em;
+    }
+    #footer__div-wpp span p{
+       font-weight: 200;
+       width: 100%;
+    }
+    #footer-row-1 .footer-item{
+        background: rgb(0,122,141);
+        width: 32%;
+        height: 130px;
+        margin: 3px 1px;
+        padding: 30px 0;
+    }
+
+    /* Here the Footer Section end */
+
 }
 
 @media (min-device-width: 1023.99px){ 
@@ -1284,5 +1605,4 @@
         /* border: 1px solid red; */
         margin-left: -5px;
     }
-
 }
