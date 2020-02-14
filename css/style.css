@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700&display=swap');
 
 html {
     height: 100%;
@@ -30,7 +30,7 @@ header{
     height: 3em;
 }
 #nav-content-1{
-    margin-right: 10px;
+    margin-right: 10%;
     border-right: 4px solid rgba(235, 235, 235, .6);
     
 }
@@ -96,6 +96,18 @@ header{
 #fourth-section .row{
     margin: 15px 25px;
   
+}
+#all-semesters{
+    background-color: #007A8D;
+    margin: 2px -6px;
+}
+
+#semesters-place .b-outline-choosed{
+    position: relative;
+    height: 2.2em;
+}
+#semesters-place .b-outline-choosed p{
+    margin: 2px 0;
 }
 
 .sec-icon{

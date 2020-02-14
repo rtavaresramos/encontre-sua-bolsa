@@ -63,7 +63,7 @@
     #first-section{
         z-index: 0;
         position: relative;
-        height: 50px;
+        height: 55px;
     }
     #first-section .my-account{
         position: absolute;
@@ -83,6 +83,7 @@
     #second-section{
         position: relative;
         height: 50px;
+        margin: 20px 0 0 0;
     }
     #second-section .my-account{
         position: absolute;
@@ -93,6 +94,122 @@
 
     /* Here the Second Section end */
 
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 100%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.5em;
+
+    }
+
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
+
+    #footer__made-with-love{
+        font-size: 1.4em;
+        font-weight: 300;
+        height: 150px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -192,6 +309,118 @@
     }
 
     /* Here the Second Section end */
+
+
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 100%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.5em;
+
+    }
+
+  
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -291,6 +520,117 @@
     }
 
     /* Here the Second Section end */
+
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 100%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.5em;
+
+    }
+
+  
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
 }
 /* // Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px){ 
@@ -397,6 +737,118 @@
     }
 
     /* Here the Second Section end */
+
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 120%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        width: 100%;
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.2em;
+
+    }
+
+  
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (min-device-width:480px) and (max-device-width: 767.98px){ 
@@ -495,6 +947,117 @@
     }
 
     /* Here the Second Section end */
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 120%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        width: 100%;
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.5em;
+
+    }
+
+  
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
 }
 /* // Large devices (desktops, less than 1200px) */
 @media (min-device-width: 768px) and (max-device-width: 1023.98px){ 
@@ -596,4 +1159,130 @@
     }
 
     /* Here the Second Section end */
+
+    #third-section{
+        padding: 0 0;
+    }
+    #favorite-schoolship{
+        width: 120%;
+    }
+    #favorite-schoolship h1{
+        font-weight: 500;
+        margin-left: 0 ;
+
+    }
+    #third-section p{
+        width: 100%;
+        font-weight: 300;
+        margin-left: 0 ;
+        font-size: 1.2em;
+        color: #1F2D30;
+
+    }
+    #third-section .row{
+        margin: 0 0;
+    }
+
+    /* Here the Third Section end */
+
+    #fourth-section{
+        padding: 0 0;
+    }
+
+    #fourth-section__div{
+        float: right;
+        width: 100%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    #semesters-place{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #card-position{
+        padding-left: -5%;
+    }
+
+    .card-container{
+        width: 114%;
+        height: 250px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+        margin: 10px 0;
+        padding: 150px 10px;
+        font-size: 1.2em;
+    }
+
+    .b-outline-circle{
+        border: 3px solid #18ACC4;
+        width: 90px;
+        height: 90px;
+        padding: 23px 23px;
+        margin: 40px 0;
+        border-radius: 50%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .button-lg{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-left: -20px;
+        padding-top: 2%;
+        font-size: 1.5em;
+
+    }
+
+  
+    .b-outline-choosed{
+        height: 50px;
+        border: 2px solid #007A8D;
+        margin: 0 0;
+        background: #fff;
+    }
+
+    .b-outline-not-choosed{
+        border: 2px solid rgba(24, 172, 196, .3);
+        margin: 0 0;
+        height: 60px;
+        background: #fff;
+    }
+
+    #all-semesters{
+        height: 60px;
+        background-color: #007A8D;
+        margin-bottom: -5px;
+    }
+    
+    #semesters-place .b-outline-choosed{
+        height: 60px;
+        border-radius: 0;
+        margin-bottom: -3px;
+    }
+
+    #semesters-place .b-outline-not-choosed{
+        border: 2px solid #007A8D;
+        border-top: none;
+
+    }
+
+    /* Here the Fourth Section end */
+}
+
+@media (min-device-width: 1023.99px){ 
+    #navbrand {
+        padding-left: 4%;
+
+    }
+
+    #nav-content-2{
+        width: 140%;
+        /* border: 1px solid red; */
+        margin-left: -5px;
+    }
+
 }
