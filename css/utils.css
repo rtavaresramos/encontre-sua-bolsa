@@ -96,6 +96,7 @@
     color: #1F2D30;
     background: #FDCB13;
 }
+
 .b-outline-circle{
     border: 3px solid #18ACC4;
     width: 70px;
@@ -238,7 +239,74 @@
     height: 400px;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
-    margin: 0 10px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+.container-card{
+    height: 400px;
+    padding: 5px 0;
+
+}
+
+.container-card hr{
+margin: 15px auto;
+ width: 90%;
+}
+.div-card{
+    width: 250px;
+    margin: 0 0;
+    padding: 0 25px;
+    text-align: center;
+}
+.div-card p{
+    width: 100%;
+    font-size: .8em;
+    margin-left: -2px;
+
+}
+.div-card h2{
+    width: 200px;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 600;
+}
+.div-card h3{
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+}
+.div-card h4{
+    width: 200px;
+    font-weight: 500;
+    color: #0FA866;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.div-card h4 span{
+    font-weight: 300;
+    font-size: .8em;
+}
+.div-card h5{
+
+    margin-left: -25px;
+    width: 250px;
+    font-size: 1em;
+}
+.div-card img{
+    margin-top: 5px;
+    height: 40px;
+    width: auto;
+ 
+}
+.div-card button{
+    height: 30px;
+    width: 80px;
+    padding: auto auto;
+    margin: 0 5px;
+}
+.score i{
+    color: #FDCB13;
 }
 
 /* Working with images */
@@ -252,6 +320,10 @@
 .divisor{
     margin-top: 20px;
     height: 3px;
+    width: 100%;
     background: rgba(235, 235, 235, .6);
     border: none;
+}
+.line-through{
+    text-decoration: line-through;
 }
