@@ -242,6 +242,14 @@
     margin: 10px 0;
     padding: 5px 10px;
 }
+.card-container-item-added{
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.26);
+    margin: 10px 0;
+    padding: 5px 10px;
+}
 .container-card{
     height: 400px;
     padding: 5px 0;
