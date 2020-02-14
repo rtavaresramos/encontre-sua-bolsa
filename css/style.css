@@ -11,7 +11,9 @@ body{
 }
 
 /* Here you can find out the Navegation's Bar Style */
-
+.m-f-show-item{
+    display:none;
+}
 nav{
     width: 100%;
     margin: 0 0;
@@ -37,10 +39,10 @@ header{
     width: 120%;
     margin: 8px;
 }
-#main{
+#main-nav{
     align-items: center;
 }
-#main img{
+#main-nav img{
     width: auto;
     height: 50px;
 }
@@ -199,4 +201,3 @@ p{
     color: #0FA866;
     font-weight: 500;
 }
-

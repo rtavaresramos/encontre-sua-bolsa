@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/mobile-fist.css">
     <link rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" 
@@ -22,7 +23,7 @@
        <nav>
         <div class="row" style="padding: 10px 10px;">
             <div class="col" >
-                <div id="main" class="container">
+                <div id="main-nav" class="container">
                     <div class="row">
                          <div class="nav-item col col-3 align-start" >
                                 <div class="row mr-4" >
@@ -31,8 +32,11 @@
                                             <div id="nav-content-1" class="row align-v-center-row" style="height: 50px;">
                                                 <div class="col col-sidebar">
                                                     <i class="fas fa-info fa-1x info nav-icon"></i>
+                                                    <h3 class="m-f-show-item">Ajuda</h3>
                                                 </div>
-                                                <div class="col col-content">
+
+
+                                                <div class="col col-content m-f-hidde-item">
                                                     <div >
                                                         <h3>Como funciona</h3>
                                                     </div>
@@ -40,13 +44,13 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col col-2">
+                                    <div class="col col-2 m-f-hidde-item">
                                         <a href="#" class="link">
                                             <div id="nav-content-2" class="row">
                                                 <div class="col col-sidebar">
                                                     <i class="fab fa-whatsapp fa-2x" style="color: #00bb2d;"></i>
                                                 </div>
-                                                <div class="col col-content">
+                                                <div class="col col-content ">
                                                     <h3>0800 123 2222</h3>
                                                     <h4>Envie uma mensagem ou ligue</h4>
                                                 </div>
@@ -55,7 +59,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="navbrand" class="col col-4 align-start nav-item" >
+                            <div id="navbrand" class="col col-4 align-start nav-item " >
                                 <div>
                                     <a href="index.html">
                                         <img src="./imgs/logo-querobolsa.svg" alt="">
@@ -65,12 +69,13 @@
                             <div class="nav-item col col-4 align-end" >
                                 <div class="row">
                                     <a href="#" class="link">
-                                        <div class="row align-v-center-row"  style="margin: 5px 0;">
-                                            <div class="col col-content  align-end">
+                                        <div id="login-content"class="row align-v-center-row"  style="margin: 5px 0;">
+                                            <div class="col col-content  m-f-hidde-item align-end">
                                                   <h3 >Nome Sobrenome</h3>
                                             </div>
                                             <div class="col col-sidebar">
                                                 <i class="far fa-user-circle fa-2x nav-icon"></i>
+                                                <h3 class="m-f-show-item">Conta</h3>
                                             </div>
                                         </div>
                                     </a>
@@ -92,12 +97,12 @@
                             <h2>Minha Conta</h2>
                          </a>
                     </div>
-                    <div class="col col-4">
+                    <div class="col col-4 m-f-hidde-item">
                         <a href="#" class="link">
                             <h2>Pré-matrículas</h2>
                         </a>
                     </div>
-                    <div class="col col-4" style="background-color: #007A8D;">
+                    <div class="col col-4 m-f-hidde-item" style="background-color: #007A8D;">
                         <a href="#" class="link">
                             <h2>Bolsas favoritas</h2>
                          </a>

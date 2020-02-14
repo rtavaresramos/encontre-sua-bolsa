@@ -324,6 +324,13 @@ margin: 15px auto;
     background: rgba(235, 235, 235, .6);
     border: none;
 }
+.v-divisor{
+    margin-left: 15px;
+    width: .00001em;
+    height: 100%;
+    background: rgba(235, 235, 235, .6);
+    border: none;
+}
 .line-through{
     text-decoration: line-through;
 }

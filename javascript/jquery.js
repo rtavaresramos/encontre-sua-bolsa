@@ -916,7 +916,7 @@ $(document).ready(function(){
                   console.log(e[i])
                   auxCard[i] = '<div class="col col-3"><div class="container card-container align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button class=" delete-cardbtn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card disabled-btn"> Indisponível </button></div></div></div></div></section></div></div>'
                   cardContainer.append( auxCard[i])    
-                  closeModal()
+                  
                   }
                 }
               })
