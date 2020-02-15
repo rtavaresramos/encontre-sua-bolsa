@@ -15,8 +15,9 @@ $(document).ready(function(){
   var courses = []
   var cities = []
   var auxCity = []
-  var auxCard = []
-  var auxBtn = []
+  var auxCardE = []
+  var auxCardD = []
+  var truth = []
 
 
     
@@ -82,8 +83,13 @@ $(document).ready(function(){
         })
 
         $.each(data, function(i, data){
-          auxCard[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card enabled-btn"> Ver oferta</button></div></div></div></div></section></div></div>'
-          return auxCard
+
+          auxCardE[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card enabled-btn"> Ver oferta</button></div></div></div></div></section></div></div>'
+          
+          auxCardD[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card disabled-btn">Indisponível</button></div></div></div></div></section></div></div>'
+          
+          truth[i] = data.enabled
+          return auxCardD , auxCardE , truth
         })
         
          
@@ -112,24 +118,26 @@ $(document).ready(function(){
                       
                       container.append( auxCity[i])
                       
-          $('.tr-checkbox').change( function(){
-            e = $('.tr-checkbox')
-            a = $('tr')
-            homeData = []
-  
-            $('#form-submit').addClass('disabled-btn')
-            $('#form-submit').removeClass('enabled-btn')
-  
-            for( var i = 0; i< e.length ; i++){
-  
-                $($(e[i]).is(':checked')).each(function(){
-                    homeData[i] = a[i]
-                    $('#form-submit').removeClass('disabled-btn')
-                    $('#form-submit').addClass('enabled-btn')
-                    
-              })
-              }
-            })
+                      $('.tr-checkbox').change( function(){
+                        e = $('.tr-checkbox')
+                        a = $('tr')
+                        homeData = []
+              
+                        $('#form-submit').addClass('disabled-btn')
+                        $('#form-submit').removeClass('enabled-btn')
+              
+                        for( var i = 0; i< e.length ; i++){
+              
+                            $($(e[i]).is(':checked')).each(function(){
+                                homeData[i] = a[i]
+                                $('#form-submit').removeClass('disabled-btn')
+                                $('#form-submit').addClass('enabled-btn')
+                                
+                          })
+                          }
+                        })
+                        
+
                     }
                   }
               }else{
@@ -356,6 +364,7 @@ $(document).ready(function(){
               }
               
               })
+             
               
         })
           // Working on checkbox elements when the select have not been changed
@@ -885,6 +894,30 @@ $(document).ready(function(){
 
             }
             })
+            $(subButton).click(function(){
+            
+              if($(subButton).hasClass('disabled-btn')){
+                
+              }else{ 
+                $.each(data, function(i, data){
+                  var e = $('.tr-checkbox')
+                  var truth = data.enabled
+                  if($(e[i]).is(':checked')){
+                    var a = parseInt(e[i].id)
+                      if(truth == true){
+                      cardContainer.append(auxCardE[a])
+                      console.log(' a variavel é'+truth)
+  
+                      closeModal()
+                    }else{
+                        cardContainer.append( auxCardD[a])
+                        console.log(' a variavel é'+truth)
+                        closeModal()
+                      }
+                    }
+                })
+              }
+            })
 
         })
 
@@ -910,7 +943,9 @@ $(document).ready(function(){
 
         // Working on the button add actions
 
-        
+        $('option : selected').each(function(){
+          
+        })
 
           $(subButton).click(function(){
             
@@ -920,21 +955,22 @@ $(document).ready(function(){
               $.each(data, function(i, data){
                 var e = $('.tr-checkbox')
 
-              if(data.enabled == true){
                 if($(e[i]).is(':checked')){
                   var a = parseInt(e[i].id)
-
-                  cardContainer.append(auxCard[a])
-                  closeModal()
-                }
-              }else{
-                if($(e[i]).is(':checked')){
-                  console.log(e[i])
-                  auxCard[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card disabled-btn"> Indisponível </button></div></div></div></div></section></div></div>'
-                  cardContainer.append( auxCard[i])    
                   
+
+                    if(truth[a] == true){
+                    cardContainer.append(auxCardE[a])
+                    console.log(' a variavel é '+truth[a])
+
+                    closeModal()
                   }
-                }
+                  else{
+                      cardContainer.append( auxCardD[a])
+                      console.log(' a variavel é '+truth[a])
+                      closeModal()
+                    }
+                  }
               })
             }
           })
