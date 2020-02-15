@@ -10,11 +10,11 @@ The layout follows the rules I had received from them. Responsivity is enabled a
 
 ## What works?
 
-From the buttons on the Home page, just the "Plus" button, which was made to add a new schoolship. When you click on it, the modal with all options of schoolships will appears to you in a second. All of the filters works, alone or together.
+From the buttons on the Home page, just the "Plus" button, which was made to add a new scholarship. When you click on it, the modal with all options of scholarships will appears to you in a second. All of the filters works, alone or together.
 
-Until you check some options of schoolship, the button at the bottom will still stay disabled. When you mark some checkbox, it'll be enabled for clicking as well.
+Until you check some options of scholarship, the button at the bottom will still stay disabled. When you mark some checkbox, it'll be enabled for clicking as well.
 
-When you choose some schoolship and click on the button to add this as favorite, it or they will appear on the Home page. You can choose as many as you want. And can also repeat the process so many times you wish.
+When you choose some scholarship and click on the button to add this as favorite, it or they will appear on the Home page. You can choose as many as you want. And can also repeat the process so many times you wish.
 
 ## What I used for building this test?
 
