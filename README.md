@@ -16,7 +16,7 @@ Until you check some options of scholarship, the button at the bottom will still
 
 When you choose some scholarship and click on the button to add this as favorite, it or they will appear on the Home page. You can choose as many as you want. And can also repeat the process so many times you wish.
 
-## What I used for building this test?
+## What I used for making the test?
 
 To choose the stacks to build it, was a hard point. I got started in my studies in React Js, but once I feel not so safe to build a whole web application just with this, I chose to do it using all pure as I could. Then, I used ** HTML, CSS, JavaScript and JQuery **.
 
