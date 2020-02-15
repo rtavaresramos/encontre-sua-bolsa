@@ -10,7 +10,7 @@ The layout follows the rules I had received from them. Responsivity is enabled a
 
 ## What works?
 
-From the buttons on the Home page, just the "Plus" button, which was made to add a new schoolship. When you click on it, the modal with all options of schoolships will appears to you in a second. All of the filters will works, alone or together.
+From the buttons on the Home page, just the "Plus" button, which was made to add a new schoolship. When you click on it, the modal with all options of schoolships will appears to you in a second. All of the filters works, alone or together.
 
 Until you check some options of schoolship, the button at the bottom will still stay disabled. When you mark some checkbox, it'll be enabled for clicking as well.
 
