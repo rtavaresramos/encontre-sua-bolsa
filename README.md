@@ -23,7 +23,7 @@ To choose the stacks to build it, was a hard point. I got started in my studies 
 
 ## Nice, but what, exactly, would you build as a front end test?
 
-Bellow (in pt-br), you can find all rules and steps they instructed me to make a good test:
+Bellow (in pt-br), you can find all the rules and steps they instructed me to make a good test:
 
 
 
