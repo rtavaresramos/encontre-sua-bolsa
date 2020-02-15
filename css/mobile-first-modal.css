@@ -73,6 +73,7 @@
 
     }
     .m-f-btn{
+        margin: 4px 0;
         margin-right: 8%;
         height: 40px;
     }
@@ -391,9 +392,10 @@
 
     }
     .m-f-btn{
-        margin-right: 8%;
-        height: 40px;
-    }
+      margin: 4px 0;
+      margin-right: 8%;
+      height: 40px;
+  }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
