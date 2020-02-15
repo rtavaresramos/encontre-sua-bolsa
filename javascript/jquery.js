@@ -16,6 +16,7 @@ $(document).ready(function(){
   var cities = []
   var auxCity = []
   var auxCard = []
+  var auxBtn = []
 
 
     
@@ -30,6 +31,12 @@ $(document).ready(function(){
         $('#modal-btn').click(function(){
           $('.tr-checkbox').attr('checked', false)
         })
+
+        // $.each(data,function(data){
+          
+
+        //   return 
+        // })
 
         $.each(data, function(i, data){
             
@@ -65,13 +72,18 @@ $(document).ready(function(){
 
         $.each(data, function(i, data){
             
-            var id = i
-
-              auxCity[i] = "<tr><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td class='td-checkbox'><label class='label-container black-text mr-4'><input class='tr-checkbox mt-3' type='checkbox' id='"+id+"'><span class='check'></span></label></td></div><div class='col col-3'><td class='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td class='td-course m-f-hidde-item'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7 mb-3'><td class='td-discount'><h5 class='d-blue-text m-f-course-name m-f-end m-f-show-item'>"+ data.course.name +"</h5><div class='m-f-level m-f-end m-f-show-item'>"+ data.course.level +"</div><p class='align-end black-text'>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span class='m-f-span-price'>R$ "+ data.price_with_discount +"/mês</span></p></td ></div></div></div></tr><hr class='divisor mt-8 mb-8'>"
-              
+              auxCity[i] = "<tr id='"+ i +"'><div class='col'><div class='row'><div class='col col-2'><div class='col col-4'><td class='td-checkbox'><label class='label-container black-text mr-4'><input class='tr-checkbox mt-3' type='checkbox' id='"+i+"'><span class='check'></span></label></td></div><div class='col col-3'><td class='td-img'><img class='img-adjust' src='"+data.university.logo_url+"'></td></div><div class='col col-3 align-start ml-3'><td class='td-course m-f-hidde-item'><h5 class='d-blue-text'>"+ data.course.name +"</h5><p class='sm-text'>"+ data.course.level +"</p></td></div></div><div class='col col-2 align-end mr-7 mb-3'><td class='td-discount'><h5 class='d-blue-text m-f-course-name m-f-end m-f-show-item'>"+ data.course.name +"</h5><div class='m-f-level m-f-end m-f-show-item'>"+ data.course.level +"</div><p class='align-end black-text'>Bolsa de <span>"+ data.discount_percentage +"% </span><br><span class='m-f-span-price'>R$ "+ data.price_with_discount +"/mês</span></p></td ></div></div></div></tr><hr class='divisor mt-8 mb-8'>"
               container.append( auxCity[i])
+              var i 
+          
+                  
+              
+            return auxCity 
+        })
 
-            return auxCity
+        $.each(data, function(i, data){
+          auxCard[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card enabled-btn"> Ver oferta</button></div></div></div></div></section></div></div>'
+          return auxCard
         })
         
          
@@ -81,7 +93,8 @@ $(document).ready(function(){
           $('#form-submit').addClass('disabled-btn')
           $('#form-submit').removeClass('enabled-btn')
             $('tr').remove()
-
+             
+            
 
             $.each(data, function(i, data){
               courseSelect = $('#course-select').val()
@@ -98,7 +111,7 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
-  
+                      
           $('.tr-checkbox').change( function(){
             e = $('.tr-checkbox')
             a = $('tr')
@@ -124,10 +137,10 @@ $(document).ready(function(){
                 if(citySelect == 'all' && courseSelect == data.course.name ){
   
                   if(data.course.kind == 'Presencial'){
-                    console.log('curso presencial na tela')
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i]) 
+                      
   
                       $('.tr-checkbox').change( function(){
                         e = $('.tr-checkbox')
@@ -157,6 +170,7 @@ $(document).ready(function(){
                           if(rangeValue >= data.price_with_discount){
                       
                             container.append( auxCity[i])
+                            
                              
                             $('.tr-checkbox').change( function(){
                               e = $('.tr-checkbox')
@@ -223,6 +237,7 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
+                      
                        
                       $('.tr-checkbox').change( function(){
                         e = $('.tr-checkbox')
@@ -252,6 +267,7 @@ $(document).ready(function(){
                     if(rangeValue >= data.price_with_discount){
                       
                       container.append( auxCity[i])
+                      
                        
                       $('.tr-checkbox').change( function(){
                         e = $('.tr-checkbox')
@@ -280,6 +296,7 @@ $(document).ready(function(){
                           if(rangeValue >= data.price_with_discount){
                       
                             container.append( auxCity[i])
+                            
                              
                             $('.tr-checkbox').change( function(){
                               e = $('.tr-checkbox')
@@ -308,6 +325,7 @@ $(document).ready(function(){
                                 if(rangeValue >= data.price_with_discount){
                       
                                   container.append( auxCity[i])
+                                  
                                    
                                   $('.tr-checkbox').change( function(){
                                     e = $('.tr-checkbox')
@@ -336,10 +354,10 @@ $(document).ready(function(){
               }
   
               }
+              
               })
-
+              
         })
-
           // Working on checkbox elements when the select have not been changed
 
         $('.input-jquery').change( function(){
@@ -892,25 +910,21 @@ $(document).ready(function(){
 
         // Working on the button add actions
 
+        
+
           $(subButton).click(function(){
             
             if($(subButton).hasClass('disabled-btn')){
               
-            }else{ $.each(data, function(i, data){
-              
-              auxCard[i] = '<div class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button class="delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button id=""class="offer-validate btn-card enabled-btn"> Ver oferta</button></div></div></div></div></section></div></div>'
-              
-              return auxCard
-            })
-            
-            $.each(data, function(i, data){
-              var e = $('.tr-checkbox')
-              
+            }else{ 
+              $.each(data, function(i, data){
+                var e = $('.tr-checkbox')
+
               if(data.enabled == true){
                 if($(e[i]).is(':checked')){
-                  console.log(e[i])
-                  auxCard[i] = '<div id="added-card-'+ i +'" class="col col-3"><div class="container card-container-item-added align-v-center-col"><section class="header-card"><div class="row"><div class="col"><div class="container-card row"><div class="col div-card"><img src="'+ data.university.logo_url +'" alt=""></div><div class="col div-card"><h3 class="black-text">'+ data.university.name+'</h3></div><div class="col div-card"><h5 class="h-blue-text">'+ data.course.name+'</h5></div><div class="col div-card"><h3 class="black-text">'+ data.university.score +'<span class="score"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></h3></div><hr class="divisor"> <div class="col div-card"><h3 class="black-text">'+ data.course.kind + '-' + data.course.shift + '</h3><p class="text-card">Início das aulas em: '+ data.start_date +'</p></div><hr class="divisor"><div class="col div-card"><h2 class="black-text">Mensalidade com o Quero Bolsa:</h2></div><div class="col div-card"><p class="black-text line-through grey-text" > R$'+ data.full_price +'</p><h4 >'+ data.price_with_discount +'<span class="grey-text"> / mês</span></h4></div><div class="col div-card"><button onclick="deleteCard('+i+')" class=" delete-card btn-card button-md b-outline-choosed h-blue-text">Excluir</button><button class="offer-validate btn-card enabled-btn"> Ver oferta</button></div></div></div></div></section></div></div>'
-                  cardContainer.append( auxCard[i])    
+                  var a = parseInt(e[i].id)
+
+                  cardContainer.append(auxCard[a])
                   closeModal()
                 }
               }else{
