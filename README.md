@@ -1,4 +1,31 @@
-# Teste de Front End da Quero Educação
+# Front End Test from Quero Educação
+
+Hi there, here you can find my version from the front end test I made for Quero Educação. 
+
+## How do I see the test?
+
+You can check this out on the link:(https://rtavaresramos.github.io/frontend-teste-quero).
+
+The layout follows the rules I had received from them. Responsivity is enabled and you can see this in almost every phone and for sure in the most famous on the market.
+
+## What works?
+
+From the buttons on the Home page, just the "Plus" button, which was made to add a new schoolship. When you click on it, the modal with all options of schoolships will appears to you in a second. All of the filters will works, alone or together.
+
+Until you check some options of schoolship, the button at the bottom will still stay disabled. When you mark some checkbox, it'll be enabled for clicking as well.
+
+When you choose some schoolship and click on the button to add this as favorite, it or they will appear on the Home page. You can choose as many as you want. And can also repeat the process so many times you wish.
+
+## What I used for building this test?
+
+To choose the stacks to build it, was a hard point. I got started in my studies in React Js, but once I feel not so safe to build a whole web application just with this, I chose to do it using all pure as I could. Then, I used ** HTML, CSS, JavaScript and JQuery **.
+
+
+## Nice, but what, exactly, would you build as a front end test?
+
+Bellow (in pt-br), you can find all rules and steps they instructed me to make a good test:
+
+
 
 ## Bolsas favoritas
 
