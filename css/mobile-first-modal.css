@@ -1,0 +1,472 @@
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px){
+
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+      
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px){
+    
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px){
+
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1023.98px){
+
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+}
+
+
+/* Devices Width's */
+
+@media (max-device-width: 479.98px){
+
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-device-width:480px) and (max-device-width: 767.98px){
+
+      
+      .modal-content {
+        width: 90%;
+      }
+
+      .m-f-select{
+          margin: 10px 0;
+          width: 100%;
+      }
+      .m-f-select h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox{
+        margin: 10px 0;
+        width: 100%; 
+      }
+      .m-f-checkbox h4{
+        font-size: 1em;
+      }
+      .m-f-checkbox .label-container{
+        font-size: 1.3em;
+      }
+
+      .m-f-range{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .m-f-range h4{
+      font-size: 1em;
+    }
+    .m-f-range span{
+      font-size: 1.3em;
+    }
+
+    #m-f-content{
+        margin: 0 0;
+        width: 100%;
+    }
+    #m-f-content p{
+        font-size: 1em;
+        font-weight: 400;
+        width: 110%;
+    }
+    #m-f-content h3{
+        width: 100%;
+        margin: 0 0;
+    }
+    .m-f-end{
+        text-align: end;
+    }
+
+    .m-f-start{
+        text-align: start;
+    }
+    #m-f-content a{
+        width: 100%;
+    }
+    #m-f-content a h3{
+        width: 100%;
+    }
+    .m-f-course-name{
+        font-size: .8em;
+    }
+    .m-f-level{
+        margin-top: -5px;
+        margin-bottom: 7px;
+        font-size: .7em;
+
+    }
+    .m-f-btn{
+        margin-right: 8%;
+        height: 40px;
+    }
+}
+
